@@ -44,6 +44,7 @@ body {
 
 input {
     font-family: inherit;
+    outline: transparent;
 }
 
 .container {
@@ -51,6 +52,10 @@ input {
     max-width: 375px;
     margin: 0 auto;
     padding: 0 20px;
+}
+.contact-us {
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 /*============================375==================================*/
 
@@ -109,6 +114,7 @@ input {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: #3350e9;
     padding-left: 14px;
+    outline: transparent;
 }
 input::placeholder {
     font-weight: 400;
@@ -117,7 +123,6 @@ input::placeholder {
         color: #0c0c0c;
         padding: 12px 136px 12px 0;
 }
-
 
 textarea::placeholder {
     font-weight: 400;
@@ -135,9 +140,8 @@ textarea::placeholder {
         outline: none;
 }
 .person-data:focus,
-.textarea-class:focus,
-.person-data:active,
-.textarea-class:active {
+.textarea-class:focus
+ {
     border: 1px solid #3350e9;
 }
 .send-button {
@@ -188,12 +192,68 @@ textarea::placeholder {
 @media only screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+        padding: 0 32px;
     }
+    .heading-contactus {
+        font-weight: 600;
+            font-size: 48px;
+            line-height: 0.91667;
+            letter-spacing: -0.02em;
+            color: #0c0c0c;
+            margin-bottom: 40px;
+    }
+    .text-contact-us {
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            color: rgba(12, 12, 12, 0.7);
+    }
+    .contact-form-div {
+        border-radius: 50px;
+            padding: 50px 122px;
+            width: 704px;
+            height: 556px;
+            
+    }
+    .person-data {
+        width: 460px;
+            height: 52px;
+    }
+    .textarea-class {
+        width: 460px;
+        height: 90px
+    }
+    .send-button {
+        padding: 17px 63px;
+            width: 160px;
+            height: 52px;
+    }
+    .contactus-wrapper {
+            gap: 32px;
+        }
+    
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
     .container {
         max-width: 1280px;
+        padding: 0 65px;
     }
+   .contact-form-div {
+        width: 580px;
+        height: 556px;
+        padding: 50px 60px;
+   }
+   .contactus-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+   }
+    
+
+
+    
+
 }
