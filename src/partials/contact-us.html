@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
-    <link rel="stylesheet" href="./src/css/cotnact-us.css">
-</head>
-<body>
+
     <section id="section-contact-us" class="contact-us">
         <div class="container">
-            <h2>Contact us</h2>
+            <h2 class="heading-contactus">Contact us</h2>
+        <div class="contactus-wrapper">
         <div class="contact-form-div">
         <p class="text-contact-us">Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you
         shortly.</p>
@@ -18,19 +10,19 @@
         <div class="name-div">
             <label class="new-name" for="user-name"></label>
               <div class="input-wrapper" >
-                <input type="text" id="user-name" class="person-data" name="user-name" placeholder="Name">
+                <input required type="text" id="user-name" class="person-data name" name="user-name" placeholder="Name">
             </div>
         </div>
         <div class="name-div">
             <label class="new-name" for="user-email"></label>
             <div class="input-wrapper">
-                <input type="email" id="user-email" class="person-data" name="user-email" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+                <input required type="email" id="user-email" class="person-data" name="user-email" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
             </div>
         </div>
         <div class="name-div">
             <label class="new-name" for="user-tel"></label>
             <div class="input-wrapper">
-                <input type="tel" id="user-tel" class="person-data" name="user-tel" placeholder="+380" pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$">
+                <input required type="tel" id="user-tel" class="person-data" name="user-tel" placeholder="+380" pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$">
             </div>
         </div>
         <div class="textarea-div">
@@ -39,21 +31,19 @@
             <textarea id="user-comment" name="user-comment" placeholder="Comment" class="textarea-class">
             </textarea>
         </div>
-        <button type="submit" class="send-button">Send</button>
-        </form>
         
-        <div class="img-div">
-        <picture>
-            <source srcset="./src/img/contactus-1x-504-comp.jpg 1x, ./src/img/contactus-2x-504-comp.jpg 2x" media="(min-width: 1280px)"/>
-            <source srcset="./src/img/contactus-1x-704.jpg 1x, ./src/img/contactus-2x-704.jpg 2x" media="(min-width: 768px)"/>
-            <source srcset="./src/img/contactus-1x-355.jpg 1x, ./src/img/contactus-2x-355.jpg 2x" media="(max-width: 767px)"/>
-            <img src="./src/img/contactus-1x-355.jpg" alt="watches on stone" width="335">
-        </picture>
+        </form>
+    <button type="submit" class="send-button">Send</button>
         </div>
+        <div class="picture-div">
+            <picture class="picture-contactus">
+                <source srcset="/img/contactus-1x-504-comp.jpg 1x, /img/contactus-2x-504-comp.jpg 2x" />
+                <source srcset="/img/contactus-1x-704.jpg 1x, /img/contactus-2x-704.jpg 2x"/>
+                <source srcset="/img/contactus-1x-355.jpg 1x, /img/contactus-2x-355.jpg 2x" />
+                <img src="/img/contactus-1x-355.jpg" alt="watches on stone" width="335">
+            </picture>
 
         </div>
         </div>
-
+        </div>
     </section>
-</body>
-</html>
