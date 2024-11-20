@@ -1,31 +1,3 @@
-body {
-  font-family: 'Gilroy', sans-serif;
-  box-sizing: border-box;
-  background-color: #fff;
-  font-family: inherit;
-  color: currentColor;
-}
-
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
 /*-------------------catalog---------------------*/
 
 ul {
@@ -37,12 +9,11 @@ ul {
 }
 
 .watch-btn {
-  font-family: 'Gilroy', sans-serif;
   font-weight: 500;
   font-size: 14px;
 
-  /* line-height: 18px; */
-  line-height: 129%;
+  line-height: 18px;
+  /* line-height: 129%; */
   text-align: center;
   color: #fff;
   cursor: pointer;
@@ -74,7 +45,6 @@ ul {
   /* line-height: 32px; */
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: #0c0c0c;
   margin-bottom: 24px;
   margin-top: 0;
 }
@@ -85,8 +55,8 @@ ul {
   font-size: 16px;
   margin: 0 0 8px 0;
 
-  /* line-height: 20px; */
-  line-height: 125%;
+  line-height: 20px;
+  /* line-height: 125%; */
   letter-spacing: -0.02em;
   color: #0c0c0c;
   margin-bottom: 8px;
@@ -151,9 +121,6 @@ ul {
 /****************tab****************/
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-  .container {
-    padding: 0 32px;
-  }
 
   .watch {
     padding-top: 0;
@@ -197,14 +164,10 @@ ul {
     /* line-height: 20px; */
     line-height: 100%;
     letter-spacing: -0.02em;
-    color: #0c0c0c;
   }
 }
 /****************des****************/
 @media only screen and (min-width: 1280px) {
-  .container {
-    padding: 0 65px;
-  }
 
   .watch {
     padding-top: 0px;
