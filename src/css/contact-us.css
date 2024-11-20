@@ -99,9 +99,10 @@ textarea::placeholder {
         
        
 }
+
 .person-data:focus,
-.textarea-class:focus
- {
+.textarea-class:focus,
+.person-data:valid {
     border: 1px solid #3350e9;
 }
 .send-button {
