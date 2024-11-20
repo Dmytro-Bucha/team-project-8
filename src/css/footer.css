@@ -15,7 +15,7 @@
     background-color: #0C0C0C;
     color: #FBFBFB;
     border-radius: 30px;
-    padding: 40px 40px 28px 40px;
+    padding: 40px 28px 28px 28px;
     font-size: 14px;
     width: 100%;
     
@@ -27,11 +27,11 @@
 
 .footer-header, .footer-header-tabletmobile {
 
-    font-size: 28px;
+    font-size: 20px;
     max-width: 523px;
     text-align: center;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 24px;
     letter-spacing: -0.02em;
 }
 
@@ -42,6 +42,7 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 100px;
+
     
 }
 
@@ -64,7 +65,9 @@
 .footer-links {
     row-gap: 8px;
     column-gap: 16px;
-    white-space: nowrap
+    white-space: nowrap;
+    max-width: 147px;
+    
 }
 
 .footer-termsprivacy {
@@ -137,13 +140,26 @@
     margin-top: 8px;
 }
 
+.footer-header-tabletmobile {
+    width: 279px;
 }
 
-@media screen (min-width: 768px)
+}
+
+@media screen and (min-width: 768px)
   {
     .footer-links {
         gap: 19px;
         
+    }
+
+    .page-footer {
+        padding: 40px 40px 28px 40px;
+    }
+
+    .footer-header, .footer-header-tabletmobile {
+        font-size: 28px;
+        line-height: 32px;
     }
 
 }
