@@ -1,5 +1,4 @@
-git add --all
-git commit -m "commit message"
+
 
 .hidden {
     position: absolute;
@@ -21,6 +20,8 @@ git commit -m "commit message"
     padding: 40px 28px 28px 28px;
     font-size: 14px;
     width: 100%;
+    max-width: 335px;
+    
     
 }
 
@@ -159,6 +160,7 @@ git commit -m "commit message"
 
     .page-footer {
         padding: 40px 40px 28px 40px;
+        max-width: 704px;
     }
 
     .footer-header, .footer-header-tabletmobile {
@@ -181,6 +183,11 @@ git commit -m "commit message"
 }
 
 @media screen and (min-width: 1280px) {
+
+    .page-footer {
+        padding: 40px 40px 28px 40px;
+        max-width: 1216px;
+    }
     .footer-header-tabletmobile {
         display: none;
     }
