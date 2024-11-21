@@ -224,13 +224,12 @@ ul {
     height: 312px;
     margin: 24px 32px 10px 32px;
   }
-
-  @media only screen and (max-width: 767px) {
-    .watch-item-h {
-      display: none;
-    }
-    .watch-item-b {
-      display: contents;
-    }
+}
+@media only screen and (max-width: 767px) {
+  .watch-item-h {
+    display: none;
+  }
+  .watch-item-b {
+    display: contents;
   }
 }
